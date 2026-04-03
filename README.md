@@ -30,9 +30,9 @@
 Убедитесь, что у вас установлены **Docker** и **Docker Compose**.
 В корне проекта должен находиться файл `secret.env` с настройками базы данных, это было сделано, для того чтобы скрыть данные:
 ```env
-DB_NAME=payment_db
-DB_USERNAME=postgres
-DB_PASSWORD=postgres
+SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/postgres
+SPRING_DATASOURCE_USERNAME=postgres
+SPRING_DATASOURCE_PASSWORD=postgres
 ```
 
 ### 2. Сборка и запуск
